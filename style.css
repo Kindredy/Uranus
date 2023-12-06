@@ -1,0 +1,342 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background: url(Assets/Stars.png), #070724;
+}
+
+header {
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 30px;
+  z-index: 1;
+  background-color: #070724;
+  background-image: url(./assets/Stars.png);
+}
+
+header h1 {
+  color: #fff;
+  font-family: Antonio;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -1.05px;
+  text-transform: uppercase;
+}
+
+header nav {
+  display: flex;
+  gap: 30px;
+}
+
+header nav a {
+  font-family: "League Spartan", sans-serif;
+  font-size: 11px;
+  letter-spacing: 1px;
+  opacity: 0.75;
+  text-decoration: none;
+  color: #fff;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px;
+  text-transform: uppercase;
+}
+
+.burgerMenu {
+  display: none;
+}
+
+main {
+  padding: 80px 160px 50px 160px;
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.imgContainer {
+  display: flex;
+  justify-content: center;
+  width: 60%;
+}
+
+.textContainer {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.textContainer > div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.textContainer h1 {
+  color: #fff;
+  font-family: Antonio;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.textContainer p {
+  color: #fff;
+  font-family: "League Spartan", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+  opacity: 0.75;
+}
+
+.wikipedia {
+  display: flex;
+  align-items: center;
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.wikipedia p {
+  opacity: 0.5;
+}
+
+.wikipedia a {
+  color: #fff;
+  opacity: 0.5;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-family: "League Spartan", sans-serif;
+}
+
+.source::after {
+  content: url(Assets/linksIcon.png);
+  margin-left: 5px;
+}
+
+.btnContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.btnContainer button {
+  color: white;
+  display: flex;
+  background-color: transparent;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  text-transform: uppercase;
+  height: 48px;
+  display: flex;
+  align-items: center;
+}
+
+.btnContainer button:nth-child(1) {
+  background: #1ec1a2;
+  border: none;
+}
+
+.btnContainer .num {
+  color: #fff;
+  font-family: "League Spartan", sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 2.571px;
+  opacity: 0.7;
+  padding: 0px 20px;
+}
+
+.btnContainer p:nth-child(2) {
+  color: #fff;
+  font-family: "League Spartan", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 2.571px;
+  text-transform: uppercase;
+}
+
+footer {
+  padding: 50px 160px;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+footer div {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 22%;
+}
+
+footer p:nth-child(1) {
+  color: #fff;
+  font-family: "League Spartan", sans-serif;
+  font-size: 11px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  opacity: 0.75;
+}
+
+footer p:nth-child(2) {
+  color: #fff;
+  font-family: Antonio;
+  font-size: 40px;
+  font-weight: 400;
+  letter-spacing: -1.5px;
+}
+
+@media only screen and (max-width: 1200px) {
+  header {
+    flex-direction: column;
+    height: 120px;
+    justify-content: space-around;
+  }
+
+  header nav {
+    gap: 20px;
+  }
+
+  main {
+    margin-top: 120px;
+    flex-direction: column;
+    padding: 0px 25px;
+  }
+
+  .imgContainer {
+    padding: 93px 60px 73px 60px;
+  }
+
+  .imgContainer img {
+    width: 290px;
+    height: 290px;
+  }
+
+  .textContainer {
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+  }
+
+  .textContainer > div {
+    width: 50%;
+  }
+
+  footer {
+    padding: 20px 25px;
+  }
+
+  footer div p:nth-child(2) {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  footer div {
+    padding: 10px;
+  }
+  footer p:nth-child(1) {
+    font-size: 10px;
+  }
+  footer p:nth-child(2) {
+    font-size: 22px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    height: 70px;
+    padding: 0px 20px;
+  }
+  header > nav {
+    display: none;
+  }
+  .burgerMenu {
+    display: unset;
+  }
+  main {
+    margin-top: 120px;
+  }
+  .textContainer div:nth-child(2) {
+    position: fixed;
+    top: 70px;
+    left: 0px;
+    width: 100%;
+    padding: 0px 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    z-index: 1;
+    background-color: #070724;
+    background-image: url(./assets/stars.png);
+  }
+  .textContainer .btnContainer {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .textContainer .btnContainer button:nth-child(1) {
+    background-color: transparent;
+    border-bottom: 3px solid #1ec1a2;
+  }
+  .textContainer .btnContainer button {
+    padding: 0px 5px;
+    border: none;
+  }
+  .num {
+    display: none;
+  }
+  .imgContainer {
+    justify-content: center;
+  }
+  .imgContainer img {
+    width: 175px;
+    height: 175px;
+  }
+  .textContainer {
+    justify-content: center;
+    text-align: center;
+  }
+  .textContainer > div:nth-child(1) {
+    width: 100%;
+    align-items: center;
+  }
+  .wikipedia {
+    margin-left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 32px;
+  }
+  footer {
+    padding: 20px;
+    flex-direction: column;
+    gap: 8px;
+  }
+  footer > div {
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+  }
+}
